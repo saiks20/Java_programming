@@ -17,3 +17,10 @@ These are snapshots of different data types in java.
 ###  Number System.
 1. There are decimal, binary,octal and hexadecimal number system.
 2. in Java numbers are by default decimal.Binary,octal and hexadecimal numbers need to be represented differently.
+
+### Arrays
+1. Arrays are collections of elements of primitive data types.
+2. In java,arrays are of fixed length.
+3. Each element of array is initialized by default value of the primitive data type.
+4. Arrays class is used to do operations on array like print and sort.
+5. 2D arrays are not defined in java explicitly. It is defined as arrays of arrays.
