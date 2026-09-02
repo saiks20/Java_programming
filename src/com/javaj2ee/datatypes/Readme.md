@@ -52,13 +52,39 @@ These are snapshots of different data types in java.
 ### Maths class.
 1. The Math class in Java provides a collection of static methods for performing mathematical operations such as basic arithmetic, trigonometric functions, logarithmic functions, and more.
 2. Some commonly used methods in the Math class include:
-   1. `Math.abs()`: Returns the absolute value of a number.
-   2. `Math.sqrt()`: Returns the square root of a number.
-   3. `Math.pow()`: Returns the value of the first argument raised to the power of the second argument.
-   4. `Math.max()`: Returns the maximum of two values.
-   5. `Math.min()`: Returns the minimum of two values.
+   i`Math.abs()`: Returns the absolute value of a number.
+   ii`Math.sqrt()`: Returns the square root of a number.
+   iii.`Math.pow()`: Returns the value of the first argument raised to the power of the second argument.
+   iv.`Math.max()`: Returns the maximum of two values.
+   v.`Math.min()`: Returns the minimum of two values.
 3. The Math class also provides constants such as `Math.PI` and `Math.E` for representing the mathematical constants pi and e, respectively.
 4. The Math class is part of the `java.lang` package, which is automatically imported in every Java program, so you can use its methods without needing to import it explicitly. 
 
 
 ### Type of Expression in Java.
+1. Expression is a combination of variables, operators, and method invocations that are constructed according to the syntax of the language, that evaluates to a single value.
+2. The difference between expression and statement is that expression evaluates to a single value, while statement performs an action.
+3. In Java type of Expression is determined by the type of the operands and the operators used in the expression.
+4. If the operands are of different types, Java will perform type promotion to convert them to a common type before evaluating the expression.
+5. if operands are byte, short, or char, they are promoted to int before the operation is performed.
+6. If the operands are byte and int, the byte operand is promoted to int before the operation is performed.
+7. if the operands are int and long, the int operand is promoted to long before the operation is performed.
+8. If the operands are long and float, the long operand is promoted to float before the operation is performed.
+9. If the operands are float and double, the float operand is promoted to double before the operation is performed.
+10. If the operands are of string type, the result of the expression is also of string type.
+11. if the operands are of boolean type, the result of the expression is also of boolean type.
+12. if the operands are string and int, the result of the expression is of string type.
+13. if the operands are string and null, the result of the expression is of string type.
+
+### Primitive and reference type comparison in Java
+1. if (==) is used to compare primitive types, the result will be true if the values are equal, and false otherwise.
+2. if (==) is used to compare reference types, the result will be true if both references point to the same object, and false otherwise.
+3. In case of Integer wrapper class, if the value is between -128 and 127, the result will be true if the values are equal, and false otherwise. This is because Java caches Integer objects for values in this range to improve performance.
+4. In case of double wrapper class, if the value is NaN (Not a Number), the result will be false if the values are equal, and true otherwise. This is because NaN is not considered equal to any value, including itself.
+5. In case of byte wrapper class, if the value is between -128 and 127, the result will be true if the values are equal, and false otherwise. This is because Java caches Byte objects for values in this range to improve performance.
+6. In case of char wrapper class, if the value is between '\u0000' and '\u007F', the result will be true if the values are equal, and false otherwise. This is because Java caches Character objects for values in this range to improve performance.
+7. In case of boolean wrapper class, if the value is true or false, the result will be true if the values are equal, and false otherwise. This is because Java caches Boolean objects for values in this range to improve performance.
+8. In case of short wrapper class, if the value is between -128 and 127, the result will be true if the values are equal, and false otherwise. This is because Java caches Short objects for values in this range to improve performance.
+9. In case of long wrapper class, if the value is between -128 and 127, the result will be true if the values are equal, and false otherwise. This is because Java caches Long objects for values in this range to improve performance.
+10. In case of float wrapper class, if the value is NaN (Not a Number), the result will be false if the values are equal, and true otherwise. This is because NaN is not considered equal to any value, including itself.
+11. In case of String wrapper class, if the value is null, the result will be false if the values are equal, and true otherwise. This is because null is not considered equal to any value, including itself.
